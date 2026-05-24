@@ -17,4 +17,7 @@ node {
         app.push()
      }
    }
+   stage('Run Container') {
+    sh 'docker run -d -p 3000:3000 ranjankumar210/docker-pipeline:${commit_id}'
+   }
 }
