@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('This is my first projecy with docker,Hello World!');
+  res.send('This is my first project with docker and mysql,Hello World!');
 });
 
 var server = app.listen(3000, function () {
